@@ -13,8 +13,8 @@ router.get('/', function(req, res, next) {
   res.send("home of the page")
 });
 
-/* POST registrer. */
-router.post('/registrer', async (req, res) => {
+/* POST registrer users. */
+router.post('/user/registrer', async (req, res) => {
   let contrasena = req.body.contrasena
   let nombre = req.body.nombre
   let foto = req.body.foto
@@ -29,13 +29,12 @@ router.post('/registrer', async (req, res) => {
   }
   await client.put(params, function (err, data){
     if (err) {
-      res.send({
+      res.status(500).send({
         success: false,
         message: err
       });
     } else {
-      console.log(data)
-      res.send({
+      res.status(200).send({
         success: true,
         message: 'Added user',
         user: data
@@ -45,7 +44,7 @@ router.post('/registrer', async (req, res) => {
 })
 
 
-  /*GET login de usuario*/
+  /*GET login*/
 router.post('/login', async (req, res) => {
   let nombre = req.body.nombre
   let contrasena = req.body.contrasena
@@ -60,12 +59,58 @@ router.post('/login', async (req, res) => {
 
   await client.get(params, function (err, data){
     if(!err){
-      res.send(data)
+      res.status(200).send(data)
     }else{
-      res.send('no existe')
+      res.status(404).send('no existe')
     }
   })
 })
+
+/*POST registrer students*/
+router.post('/student/registrer', async (req, res) => {
+  let nombre = req.body.nombre
+  let foto = req.body.foto
+
+  let params = {
+    TableName: 'tabla-estudiante-semi1-pro1',
+    Item: {
+      "nombre": nombre,
+      "foto": foto
+    }
+  }
+
+  await client.put(params, function (err, data){
+    if (err) {
+      res.status(500).send({
+        success: false,
+        message: err
+      });
+    } else {
+      res.status(200).send({
+        success: true,
+        message: 'Added student',
+        user: data
+      });
+    }
+  })
+})
+
+/* GET students*/
+/*
+router.get('/users', async (req, res) => {
+
+  let params = {
+    TableName : "tabla-estudiantes-semi1-pro1",
+    KeyConditionExpression: "#nombre != kaka",
+    ExpressionAttributeNames:{
+      "#nombre": "nombre"
+    },
+    ExpressionAttributeValues: {
+      ":yyyy": 1985
+    }
+  };
+})
+*/
 
 
 module.exports = router;
