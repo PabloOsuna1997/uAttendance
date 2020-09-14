@@ -9,7 +9,6 @@ const client = new aws.DynamoDB.DocumentClient();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  console.log(connection)
   res.send("home of the page")
 });
 
@@ -96,21 +95,25 @@ router.post('/student/registrer', async (req, res) => {
 })
 
 /* GET students*/
-/*
+
 router.get('/users', async (req, res) => {
 
   let params = {
-    TableName : "tabla-estudiantes-semi1-pro1",
-    KeyConditionExpression: "#nombre != kaka",
-    ExpressionAttributeNames:{
-      "#nombre": "nombre"
-    },
-    ExpressionAttributeValues: {
-      ":yyyy": 1985
+    TableName : "tabla-estudiante-semi1-pro1"
+  }
+
+  await client.scan(params, function (err, data ){
+    if(!err){
+      res.status(200).send(data)
+    }else{
+      res.status(500).send({
+        success: false,
+        message: err
+      });
     }
-  };
+  })
 })
-*/
+
 
 
 module.exports = router;
