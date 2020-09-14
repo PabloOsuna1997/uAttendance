@@ -2,7 +2,8 @@ var express = require('express');
 var router = express.Router();
 const aws = require('aws-sdk')
 const connection = require('../config/connectionDB')
-
+const s3 = require('../config/connectionS3')
+var uploadImagenStudent = require('../src/insertPicture')
 
 aws.config.update(connection.aws_remote_comfig)
 const client = new aws.DynamoDB.DocumentClient();
@@ -67,14 +68,15 @@ router.post('/login', async (req, res) => {
 
 /*POST registrer students*/
 router.post('/student/registrer', async (req, res) => {
-  let nombre = req.body.nombre
-  let foto = req.body.foto
+
+  //carga de imagen a s3
+  nameImage = uploadImagenStudent(req.body, res)
 
   let params = {
     TableName: 'tabla-estudiante-semi1-pro1',
     Item: {
-      "nombre": nombre,
-      "foto": foto
+      "nombre": req.body.nombre,
+      "foto": req.body.nombre + req.body.tipo
     }
   }
 
