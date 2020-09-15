@@ -4,20 +4,24 @@ const s3 = require('../../../config/connectionS3')
 
 aws.config.update(connection.aws_remote_comfig)
 const client = new aws.DynamoDB.DocumentClient();
+const uploadImage = require('../../../src/insertPicture')
 
 const user = {}
 
 user.registrer = async (req, res) => {
     let contrasena = req.body.contrasena
     let nombre = req.body.nombre
-    let foto = req.body.foto
+
+    if(req.body.foto != '') {
+        nameImage = uploadImage(req.body, res, "user")
+    }
 
     let params = {
         TableName: 'tabla-usuario-semi1-pro1',
         Item: {
             "nombre": nombre,
             "contrasena": contrasena,
-            "foto": foto
+            "foto": nameImage
         }
     }
     await client.put(params, function (err, data){

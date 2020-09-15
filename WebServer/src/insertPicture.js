@@ -1,5 +1,5 @@
 const { s3 } = require('../config/connectionS3')
-module.exports = function(body, res) {
+module.exports = function(body, res, type__) {
     let type =  body.tipo
     let nombre = body.nombre
     let picture = body.foto
@@ -9,7 +9,13 @@ module.exports = function(body, res) {
     let Name = nombre+'.'+type
 
     //creacion de objeto para carga de s3
-    let bucket = process.env.BUCKETSTUDENTS
+    let bucket = ''
+    if(type__ === "user"){
+        bucket = process.env.BUCKETUSER
+    }else {
+        bucket = process.env.BUCKETSTUDENTS
+    }
+
     console.log(bucket)
     let upload = {
         Bucket: bucket,
@@ -26,5 +32,7 @@ module.exports = function(body, res) {
             })
         }
     })
+
+    return Name
 }
 

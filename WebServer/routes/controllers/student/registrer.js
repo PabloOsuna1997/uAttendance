@@ -11,13 +11,13 @@ const student = {}
 student.registrer = async (req, res) => {
 
     //carga de imagen a s3
-    nameImage = uploadImagenStudent(req.body, res)
+    nameImage = uploadImagenStudent(req.body, res, "student")
 
     let params = {
         TableName: 'tabla-estudiante-semi1-pro1',
         Item: {
             "nombre": req.body.nombre,
-            "foto": req.body.nombre + '.' + req.body.tipo
+            "foto": nameImage
         }
     }
 
