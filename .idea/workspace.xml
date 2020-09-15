@@ -24,9 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ea97c7bf-89cf-4a32-a94f-8d4b380c1f64" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/routes/controllers/student/get.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/routes/controllers/student/get.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/routes/controllers/student/registrer.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/routes/controllers/student/registrer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/routes/controllers/user/loginCreds.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/routes/controllers/user/loginCreds.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebServer/routes/controllers/user/loginPhoto.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/routes/controllers/user/loginPhoto.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599870497816</updated>
       <workItem from="1599870501445" duration="7050000" />
-      <workItem from="1600189005011" duration="8582000" />
+      <workItem from="1600189005011" duration="9850000" />
     </task>
     <servers />
   </component>
@@ -100,9 +97,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/1920.45.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1600189534715" />
-    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1600194654602">
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1600198057793">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup/1920.45.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1600194654602" />
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup/1920.45.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1600198057793" />
   </component>
 </project>

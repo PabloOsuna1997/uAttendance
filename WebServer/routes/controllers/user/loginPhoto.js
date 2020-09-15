@@ -14,7 +14,7 @@ user.loginPhoto = async (req, res) => {
 
     //objeto de rekognition
     let params = {
-        SimilarityThreshold: 75,
+        SimilarityThreshold: 50,
         SourceImage: {
             S3Object:{
                 Bucket: 'uattendance-photos',
@@ -36,7 +36,16 @@ user.loginPhoto = async (req, res) => {
                 message: "Error al comparar las imagenes"
             })
         }else{
-            res.status(200).send(data)
+            console.log(data)
+            if (data.FaceMatches.length > 0) {          //validamos que si haya hecho una comparacion de lo contrario no son imagenes nada parecidas con la minima similitud de 50%
+                if (data.FaceMatches[0].Similarity > 75) {
+                    res.status(200).send({message: "true"})
+                } else {
+                    res.status(401).send({message: "false"})
+                }
+            }else{
+                res.status(401).send({message: "false"})
+            }
         }
     })
 
