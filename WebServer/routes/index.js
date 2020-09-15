@@ -7,7 +7,6 @@ const userLoginPhoto = require('./controllers/user/loginPhoto')
 const studentRegistrer = require('./controllers/student/registrer')
 const studentGet = require('./controllers/student/get')
 
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.send("home of the page")
@@ -15,7 +14,6 @@ router.get('/', function(req, res, next) {
 
 /* POST registrer users. */
 router.post('/user/registrer', userRegistrer.registrer)
-
 
   /*GET login*/
 router.post('/loginCreds', userLoginCreds.loginCreds)
@@ -25,7 +23,5 @@ router.post('/student/registrer', studentRegistrer.registrer)
 
 /* GET students*/
 router.get('/users', studentGet.get)
-
-
 
 module.exports = router;

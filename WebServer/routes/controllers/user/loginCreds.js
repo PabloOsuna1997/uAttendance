@@ -8,10 +8,6 @@ const user = {}
 user.loginCreds = async (req, res) => {
     let nom = req.body.nombre
     let contra = req.body.contrasena
-
-    console.log(contra)
-    console.log(nom)
-
     let params = {
         TableName: "tabla-usuario-semi1-pro1",
         KeyConditionExpression: "nombre = :n",
