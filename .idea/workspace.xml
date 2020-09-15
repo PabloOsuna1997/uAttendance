@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -21,9 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ea97c7bf-89cf-4a32-a94f-8d4b380c1f64" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/routes/controllers/student/registrer.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/routes/controllers/student/registrer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/routes/controllers/user/registrer.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/routes/controllers/user/registrer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/routes/controllers/user/loginPhoto.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/routes/controllers/user/loginPhoto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebServer/src/insertPicture.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/src/insertPicture.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,11 +44,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebServer/config" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Clases Usac\Seminario 1\lab\Proyecto 1\uAttendance\WebServer\config" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Clases Usac\Seminario 1\lab\Proyecto 1\uAttendance\WebServer" />
     </key>
@@ -60,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599870497816</updated>
       <workItem from="1599870501445" duration="7050000" />
-      <workItem from="1600189005011" duration="1659000" />
+      <workItem from="1600189005011" duration="8370000" />
     </task>
     <servers />
   </component>
@@ -92,9 +99,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/1920.45.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1600189534715" />
-    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1600189846948">
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1600194654602">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup/1920.45.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1600189846948" />
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup/1920.45.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1600194654602" />
   </component>
 </project>

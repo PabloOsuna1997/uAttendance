@@ -12,6 +12,8 @@ module.exports = function(body, res, type__) {
     let bucket = ''
     if(type__ === "user"){
         bucket = process.env.BUCKETUSER
+    }else if(type__ === "login"){
+        bucket = process.env.BUCKETLOGIN
     }else {
         bucket = process.env.BUCKETSTUDENTS
     }

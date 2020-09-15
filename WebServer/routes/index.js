@@ -15,8 +15,11 @@ router.get('/', function(req, res, next) {
 /* POST registrer users. */
 router.post('/user/registrer', userRegistrer.registrer)
 
-  /*GET login*/
+  /*POST login*/
 router.post('/loginCreds', userLoginCreds.loginCreds)
+
+/*POST login*/
+router.post('/loginPhoto', userLoginPhoto.loginPhoto)
 
 /*POST registrer students*/
 router.post('/student/registrer', studentRegistrer.registrer)
