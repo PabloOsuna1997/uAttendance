@@ -1,4 +1,6 @@
 const aws = require('aws-sdk')
+
+//keys updates
 const connection = require('../../../config/connectionDB')
 var uploadImagenStudent = require('../../../src/insertPicture')
 

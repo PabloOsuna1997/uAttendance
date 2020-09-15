@@ -1,6 +1,7 @@
 const aws = require('aws-sdk')
 const uploadImage = require('../../../src/insertPicture')
 
+//keys updates
 const connection = require('../../../config/connectionRekognition')
 aws.config.update(connection.aws_remote_comfig)
 const client = new aws.Rekognition();

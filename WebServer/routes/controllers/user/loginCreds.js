@@ -1,4 +1,6 @@
 const aws = require('aws-sdk')
+
+//keys updates
 const connection = require('../../../config/connectionDB')
 aws.config.update(connection.aws_remote_comfig)
 const client = new aws.DynamoDB.DocumentClient();

@@ -24,9 +24,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ea97c7bf-89cf-4a32-a94f-8d4b380c1f64" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/routes/controllers/student/get.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/routes/controllers/student/get.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/routes/controllers/student/registrer.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/routes/controllers/student/registrer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebServer/routes/controllers/user/loginCreds.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/routes/controllers/user/loginCreds.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebServer/routes/controllers/user/loginPhoto.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/routes/controllers/user/loginPhoto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebServer/src/insertPicture.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebServer/src/insertPicture.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599870497816</updated>
       <workItem from="1599870501445" duration="7050000" />
-      <workItem from="1600189005011" duration="8370000" />
+      <workItem from="1600189005011" duration="8582000" />
     </task>
     <servers />
   </component>
