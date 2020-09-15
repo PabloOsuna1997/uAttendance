@@ -1,10 +1,4 @@
-const aws = require('aws-sdk')
-const s3 = new aws.S3({                     //credenciales de mi usuario administrador con accesos a servicios de s3
-    apiVersion: '2006-03-01',
-    region: process.env.REGION,
-    accessKeyId: process.env.ACCESSKEYID_S3,
-    secretAccessKey: process.env.SECRETACCESSKEY_S3});
-
+const { s3 } = require('../config/connectionS3')
 module.exports = function(body, res) {
     let type =  body.tipo
     let nombre = body.nombre
@@ -16,6 +10,7 @@ module.exports = function(body, res) {
 
     //creacion de objeto para carga de s3
     let bucket = process.env.BUCKETSTUDENTS
+    console.log(bucket)
     let upload = {
         Bucket: bucket,
         Key: Name,

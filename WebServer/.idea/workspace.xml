@@ -24,8 +24,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bae89695-65ad-41b2-865f-48dfd0fab0c6" name="Default Changelist" comment="feat: login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/connectionS3.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/connectionS3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/insertPicture.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/insertPicture.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +48,14 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Clases Usac\Seminario 1\lab\Proyecto 1\uAttendance\WebServer\routes\controllers\student" />
+      <recent name="D:\Clases Usac\Seminario 1\lab\Proyecto 1\uAttendance\WebServer\routes\controllers" />
+      <recent name="D:\Clases Usac\Seminario 1\lab\Proyecto 1\uAttendance\WebServer\routes" />
+      <recent name="D:\Clases Usac\Seminario 1\lab\Proyecto 1\uAttendance\WebServer\routes\controllers\user" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -56,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599930756644</updated>
       <workItem from="1599930759549" duration="4919000" />
-      <workItem from="1600105614119" duration="14680000" />
+      <workItem from="1600105614119" duration="22548000" />
     </task>
     <task id="LOCAL-00001" summary="feat: login">
       <created>1599932628679</created>
@@ -88,10 +97,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="feat: login" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="621" y="309" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600124468606">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="621" y="309" key="#com.intellij.fileTypes.FileTypeChooser/1920.45.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1600124468606" />
     <state x="527" y="286" key="Vcs.Push.Dialog.v2" timestamp="1599932638532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="527" y="286" key="Vcs.Push.Dialog.v2/1920.45.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1599932638532" />
+    <state x="741" y="429" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600126849558">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="741" y="429" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.45.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1600126849558" />
     <state x="989" y="244" key="run.anything.popup" timestamp="1600111774736">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
