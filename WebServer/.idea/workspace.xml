@@ -24,7 +24,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bae89695-65ad-41b2-865f-48dfd0fab0c6" name="Default Changelist" comment="feat: login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/controllers/user/loginCreds.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/controllers/user/loginCreds.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +66,7 @@
       <updated>1599930756644</updated>
       <workItem from="1599930759549" duration="4919000" />
       <workItem from="1600105614119" duration="23733000" />
-      <workItem from="1600214815073" duration="512000" />
+      <workItem from="1600214815073" duration="1888000" />
     </task>
     <task id="LOCAL-00001" summary="feat: login">
       <created>1599932628679</created>
