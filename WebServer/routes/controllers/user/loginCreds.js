@@ -21,10 +21,14 @@ user.loginCreds = async (req, res) => {
     await client.query(params, function (err, data) {
         console.log(data)
         if (!err) {
-            if (data.Items[0].contrasena === contra){
-                res.status(200).send(data.Items[0])
+            if (data.Items.length > 0) {
+                if (data.Items[0].contrasena === contra) {
+                    res.status(200).send(data.Items[0])
+                } else {
+                    res.status(406).send({message: "Contraseña Incorrecta"})
+                }
             }else{
-                res.status(406).send({message: "Contraseña Incorrecta"})
+                res.status(404).send({message: "Usuario no existe"})
             }
         } else {
             console.log(err)
