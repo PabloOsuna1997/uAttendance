@@ -14,7 +14,7 @@ user.loginCreds = async (req, res) => {
         TableName: "tabla-usuario-semi1-pro1",
         KeyConditionExpression: "nombre = :n",
         ExpressionAttributeValues: {
-            ":n": "test 1"
+            ":n": nom
         }
     }
 
